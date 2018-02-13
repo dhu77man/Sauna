@@ -64,7 +64,7 @@ app.on('ready', async () => {
     width: 1024,
     height: 728,
     minWidth: 410, 
-    minHeight: 580
+    minHeight: 580,
     frame: false
   });
 

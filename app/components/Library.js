@@ -1,11 +1,11 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Home.css';
+import styles from './Library.css';
 
 type Props = {};
 
-export default class Home extends Component<Props> {
+export default class Library extends Component<Props> {
   props: Props;
 
   render() {
