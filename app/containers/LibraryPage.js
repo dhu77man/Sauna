@@ -9,7 +9,7 @@ export default class LibraryPage extends Component<Props> {
 
   render() {
     return (
-      <Library />
+        <Library />
     );
   }
 }

@@ -16,6 +16,14 @@ body {
 	padding: 0px;
 }
 
+div {
+	box-sizing: border-box;
+}
+
+.panel {
+	width: calc(100% - 250px);
+	height: 100vh;
+}
 
 #window {
 	height: 100%;
@@ -30,8 +38,8 @@ body {
 
 		#titlebar-actions {
 			position: absolute;
-			right: 5px;
-			top: 5px;
+			right: 4px;
+			top: 4px;
 			height: 18px;
 			line-height: 18px;
 			font-size: 12px;
@@ -48,8 +56,8 @@ body {
 			}
 
 			#titlebar-close {
-				background-color: #922508;
-				padding: 0 15px 0 15px;
+				background-color: #882107;
+				padding: 0 18px 0 18px;
 				color: #FFF;
 
 				&:hover {
@@ -87,4 +95,10 @@ a:hover {
 	opacity: 1;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+@media (max-width: 850px) {
+	.panel {
+		width: 100%;
+	}
 }

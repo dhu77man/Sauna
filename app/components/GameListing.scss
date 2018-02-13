@@ -1,0 +1,26 @@
+.game {
+    width: 25%;
+    padding: 0 0 20px 0;
+    float: left;
+    position: relative;
+
+    .image {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 13px;
+        font-family: Arial, Helvetica, Helvetica Neue, serif;
+        font-weight: bold;
+        padding: 0 10px 0 10px;
+        line-height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

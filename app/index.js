@@ -4,6 +4,7 @@ import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
 import { configureStore, history } from './store/configureStore';
 import './app.global.scss';
+import './etc/css/reset.css';
 import './etc/css/fa-svg-with-js.css';
 import './etc/js/fontawesome/fontawesome-all.min.js';
 
