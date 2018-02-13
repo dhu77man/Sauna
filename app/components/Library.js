@@ -84,9 +84,19 @@ let recentlyPlayed = {
 export default class Library extends Component<Props> {
 	props: Props;
 
-	render() {
+	constructor(){
+		super();
 
-		let games = recentlyPlayed.response.games.map((game, i) => <GameListing game={game} key={i} />);
+		this.state = {recentlyPlayed: {}};
+	}
+
+	componentDidMount(){
+		this.setState({recentlyPlayed: recentlyPlayed})
+	}
+
+	render(){
+
+		let games = this.state.recentlyPlayed.response && this.state.recentlyPlayed.response.games.map((game, i) => <GameListing game={game} key={i} />);
 
 		return (
 			<div>
