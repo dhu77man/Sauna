@@ -29,3 +29,13 @@ if (module.hot) {
     );
   });
 }
+
+
+/*
+
+socket.on("data", function(message) {
+	console.log(message);
+	store.dispatch({type:'MESSAGE_SENT', payload: message});
+});
+
+*/

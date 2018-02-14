@@ -47,8 +47,7 @@ div {
 			position: absolute;
 			right: 4px;
 			top: 4px;
-			height: 18px;
-			line-height: 18px;
+			line-height: 28px;
 			font-size: 12px;
 
 			.titlebar-action-button {
@@ -62,13 +61,69 @@ div {
 				}
 			}
 
+			#titlebar-close, #titlebar-minimize, #titlebar-maximize {
+				//background-color: #882107;
+				//color: #FFF;
+				position: relative;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%) rotateZ(45deg);
+					background-color: #696C6A;
+					width: 16px;
+					height: 1px;
+				}
+
+				&:after {
+					transform: translate(-50%, -50%) rotateZ(-45deg);
+				}
+
+				&:hover {
+					&:before, &:after {
+						background-color: #FFF;
+						border-color: #FFF;
+					}
+				}
+			}
+
 			#titlebar-close {
-				background-color: #882107;
-				padding: 0 18px 0 18px;
-				color: #FFF;
 
 				&:hover {
 					background-color: #C52D03;
+				}
+			}
+
+			#titlebar-maximize {
+				&:hover {
+					&:before {
+						background-color: transparent;
+					}
+				}
+				&:before {
+					opacity: 0.6;
+					background-color: transparent;
+					transform: translate(-50%, -50%) rotateZ(0deg);
+					border: 1px solid #696C6A;
+					height: 10px;
+					width: 10px;
+				}
+				&:after {
+					display: none;
+				}
+			}
+
+			#titlebar-minimize {
+				&:before {
+					transform: translate(-50%, -50%) rotateZ(0deg);
+				}
+				&:after {
+					display: none;
 				}
 			}
 		}

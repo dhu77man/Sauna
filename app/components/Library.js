@@ -2559,8 +2559,7 @@ let recentlyPlayed = {
 				"img_logo_url": "9d28a8ad11b9c10c0d27b02b273f46694d9c287f",
 				"has_community_visible_stats": true
 			}
-		]
-		
+		],
 	}
 };
 
@@ -2574,7 +2573,9 @@ export default class Library extends Component<Props> {
 	}
 
 	componentDidMount(){
-		this.setState({recentlyPlayed: recentlyPlayed})
+		let e = 3;
+		console.log(e);
+		this.setState({recentlyPlayed: recentlyPlayed});
 	}
 
 	render(){
