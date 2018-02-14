@@ -3,6 +3,7 @@
     padding: 0 0 20px 0;
     float: left;
     position: relative;
+    cursor: pointer;
 
     .image {
         width: calc(100% - 10px);
@@ -22,5 +23,35 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+    }
+}
+
+@media (max-width: 420px) {
+	.game {
+        width: 100%;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 650px) {
+	.game {
+        width: 50%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1080px) {
+	.game {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1450px) {
+	.game {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1950px) {
+	.game {
+        width: 15%;
     }
 }

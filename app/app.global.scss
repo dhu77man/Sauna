@@ -4,6 +4,13 @@
  */
 @import "~font-awesome/css/font-awesome.css";
 
+::-webkit-scrollbar-button{ display: block; height: 10px; border-radius: 0px; background-color: #181818; } 
+::-webkit-scrollbar-button:hover{ background-color: #181818; } 
+::-webkit-scrollbar-thumb{ background-color: #a0a0a0; }
+::-webkit-scrollbar-thumb:hover{ background-color: #a0a0a0; } 
+::-webkit-scrollbar-track{ background-color: #181818; } 
+::-webkit-scrollbar{ width: 16px; }
+
 body {
 	position: relative;
 	color: white;
