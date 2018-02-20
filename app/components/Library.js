@@ -2580,13 +2580,20 @@ export default class Library extends Component<Props> {
 
 	render(){
 
+		let count = 4;
+
 		let games = this.state.recentlyPlayed.response && this.state.recentlyPlayed.response.games.map((game, i) => <GameListing game={game} key={i} />);
+		let recentgames = games && games.slice(200,200 + count);
 
 		return (
 			<div>
 				<div className="panel">
 					<div className={styles.container} data-tid="container">
-						<h2>Sauna</h2>
+						<div className={styles.recentlyPlayed}>
+							<h2>Recently Played</h2>
+							{recentgames}
+							<div style={{clear:'both'}}></div>
+						</div>
 						<div className={styles.library}>
 							{games}
 							<div style={{clear:'both'}}></div>

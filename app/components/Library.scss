@@ -3,6 +3,13 @@
 	height: 100%;
 }
 
+.recentlyPlayed {
+	background-color: #000;
+	padding: 35px 10px 35px 10px;
+	width: 100%;
+}
+
+
 .library {
 	background-color: #181818;
 	padding: 15px 10px 15px 10px;
@@ -10,7 +17,10 @@
 }
 
 .container h2 {
-	font-size: 5rem;
+	font-family: Arial, Helvetica, Helvetica Neue, serif;
+	font-size: 1.5rem;
+	color: #CCC;
+	margin-bottom: 25px;
 }
 
 .container a {
